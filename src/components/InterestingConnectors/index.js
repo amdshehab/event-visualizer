@@ -15,8 +15,11 @@ const InterestingConnectors = () => {
 
   return (
     <div ref={drop} className={styles.InterestingConnectors}>
-      {connectorsList.map(({ name, imgUrl }) => (
-        <InterestingNode name={name} imgUrl={imgUrl} />
+      <div>
+        <h1>DRAG HERE -></h1>
+      </div>
+      {connectorsList.map(({ name, imgUrl }, i) => (
+        <InterestingNode name={name} imgUrl={imgUrl} key={name + i} />
       ))}
     </div>
   );

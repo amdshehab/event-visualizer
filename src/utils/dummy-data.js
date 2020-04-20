@@ -29,4 +29,24 @@ export const dummyData = [
       iconURL: "/slack.png",
     },
   },
+  {
+    coords: {
+      x: 400,
+      y: 100,
+    },
+    connector: {
+      name: "gitlab",
+      iconURL: "/slack.png",
+    },
+  },
+  {
+    coords: {
+      x: 800,
+      y: 350,
+    },
+    connector: {
+      name: "gitlab",
+      iconURL: "/slack.png",
+    },
+  },
 ];

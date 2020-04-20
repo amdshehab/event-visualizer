@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./index.module.scss";
 import { useDrag } from "react-dnd";
 
-const EventNode = ({ coords: { x, y }, icon, name, imgUrl }) => {
+const EventNode = ({ coords: { x, y }, name, imgUrl }) => {
   const [{ isDragging }, drag] = useDrag({
     item: { type: "node", name, imgUrl },
     collect: (monitor) => ({

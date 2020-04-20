@@ -16,14 +16,14 @@ function App() {
       <DndProvider backend={Backend}>
         <Visualizer>
           {dummyData.map(
-            ({ coords: { x, y }, connector: { name, iconURL: imgUrl } }) => (
+            ({ coords: { x, y }, connector: { name, iconURL: imgUrl } }, i) => (
               <EventNode
                 coords={{
                   x,
                   y,
                 }}
                 name={name}
-                key={name}
+                key={name + i}
                 imgUrl={imgUrl}
               />
             )
