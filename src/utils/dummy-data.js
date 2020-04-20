@@ -1,20 +1,32 @@
 export const dummyData = [
   {
-    x: 10,
-    y: 10,
-    name: "slack",
-    imgUrl: "/slack.png",
+    coords: {
+      x: 10,
+      y: 10,
+    },
+    connector: {
+      name: "slack",
+      iconURL: "/slack.png",
+    },
   },
   {
-    x: 300,
-    y: 20,
-    name: "jenkins",
-    imgUrl: "/slack.png",
+    coords: {
+      x: 300,
+      y: 20,
+    },
+    connector: {
+      name: "jenkins",
+      iconURL: "/slack.png",
+    },
   },
   {
-    x: 400,
-    y: 300,
-    name: "gitlab",
-    imgUrl: "/slack.png",
+    coords: {
+      x: 400,
+      y: 300,
+    },
+    connector: {
+      name: "gitlab",
+      iconURL: "/slack.png",
+    },
   },
 ];

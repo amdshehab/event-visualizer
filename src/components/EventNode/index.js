@@ -12,27 +12,18 @@ const EventNode = ({ coords: { x, y }, icon, name, imgUrl }) => {
 
   return (
     <div
+      className={styles.EventNode}
       style={{
-        position: "absolute",
         top: y,
         left: x,
         opacity: isDragging ? 0.5 : 1,
-        fontSize: 25,
-        fontWeight: "bold",
-        cursor: "move",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
       }}
       ref={drag}
     >
       <div
+        className={styles.EventImage}
         style={{
-          width: "50px",
-          height: "50px",
           backgroundImage: `url(${imgUrl})`,
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
         }}
       ></div>
       <p>{name}</p>

@@ -7,10 +7,7 @@ const InterestingConnectors = () => {
   const [connectorsList, setConnectorsList] = useState([]);
   const [{ isOver }, drop] = useDrop({
     accept: "node",
-    drop: (item) => {
-      console.log("being dropped ->", item);
-      setConnectorsList((list) => [...list, item]);
-    },
+    drop: (item) => setConnectorsList((list) => [...list, item]),
     collect: (monitor) => ({
       isOver: !!monitor.isOver(),
     }),

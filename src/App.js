@@ -15,17 +15,19 @@ function App() {
       </div>
       <DndProvider backend={Backend}>
         <Visualizer>
-          {dummyData.map(({ x, y, name, imgUrl }) => (
-            <EventNode
-              coords={{
-                x,
-                y,
-              }}
-              name={name}
-              key={name}
-              imgUrl={imgUrl}
-            />
-          ))}
+          {dummyData.map(
+            ({ coords: { x, y }, connector: { name, iconURL: imgUrl } }) => (
+              <EventNode
+                coords={{
+                  x,
+                  y,
+                }}
+                name={name}
+                key={name}
+                imgUrl={imgUrl}
+              />
+            )
+          )}
         </Visualizer>
         <InterestingConnectors />
       </DndProvider>
