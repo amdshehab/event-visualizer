@@ -7,7 +7,7 @@ A Event Visualizer built using React
 - clone this repo
 - yarn
 - yarn start
-- Drag Nodes from the pink colored area to the plum colored area
+- Drag Nodes from the pink colored area to the plum colored area, and enjoy the experience!
 
 ## Running Tests
 
@@ -43,5 +43,5 @@ There's tons, but the main ones i can think of are:
 
 ## Things left
 
-- Add a dyanmic clock, pretty easy but wasn't my priority
+- Add a dyanmic clock, wasn't my top priority
 - I've set the height to 500px to make drag/dropping easier on a laptop
