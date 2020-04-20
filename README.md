@@ -40,3 +40,8 @@ There's tons, but the main ones i can think of are:
 ## Dependencies
 
 - react-dnd which exposes some really neat hooks from it's API to make drag/dropping a more sane experience
+
+## Things left
+
+- Add a dyanmic clock, pretty easy but wasn't my priority
+- I've set the height to 500px to make drag/dropping easier on a laptop
