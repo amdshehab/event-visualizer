@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./index.module.scss";
 import Visualizer from "./components/Visualizer";
 import EventNode from "./components/EventNode";
+import { dummyData } from "./utils/dummy-data";
 
 function App() {
   return (
@@ -10,13 +11,17 @@ function App() {
         <h1>Ahmed's Visualizer</h1>
       </div>
       <Visualizer>
-        <EventNode
-          coords={{
-            x: 10,
-            y: 10,
-          }}
-          name="slack"
-        />
+        {dummyData.map(({ x, y, name, imgUrl }) => (
+          <EventNode
+            coords={{
+              x,
+              y,
+            }}
+            name={name}
+            key={name}
+            imgUrl={imgUrl}
+          />
+        ))}
       </Visualizer>
     </div>
   );
